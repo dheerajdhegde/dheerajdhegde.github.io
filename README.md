@@ -13,9 +13,10 @@
 - [BusinessCases](#BusinessCases)
 
 ## Introduction
-
-Welcome to my E-Commerce Portfolio! This repository serves as a showcase of my work and accomplishments in the field of E-Commerce management and algorithmic problem-solving. Throughout this portfolio, you'll find details of my projects, experiences, and learning journey during the Algorithmic Problem Solving course at KLE Technological University.
-
+LinkedIn is a premier professional networking platform that connects millions of individuals and businesses globally. It allows users to create comprehensive profiles detailing their skills, experiences, and accomplishments, making it easier to highlight their professional journey. LinkedIn provides a dynamic space for networking, enabling users to connect with industry peers, potential employers, and thought leaders. Additionally, the platform offers various resources such as job postings, industry news, and professional development content. By engaging on LinkedIn, you can join relevant groups, participate in discussions, and stay informed about the latest trends and opportunities in your field. Whether you're looking to advance your career, explore new job opportunities, or expand your business network, LinkedIn is an essential tool for achieving your professional aspirations.
+<p align="center">
+  <img src="https://github.com/dheerajdhegde/dheerajdhegde.github.io/assets/105264588/ecb876bb-850c-43cf-a5d1-bce2dd74d856" width="300" alt="HLD-Youtube">
+</p>
 
 
 
@@ -29,7 +30,7 @@ Welcome to my E-Commerce Portfolio! This repository serves as a showcase of my w
 
 ## BusinessCases
 
-Throughout the course, various challenges were encountered, ranging from algorithmic complexities to practical implementation hurdles. Each challenge presented an opportunity for learning and growth, contributing to the overall development.
+
 
 ### 1.Directed Acyclic Graph(DAG):
  We can use DAGs to manage and orchestrate data pipelines. In these pipelines, various data processing tasks (nodes) are executed in a specific order (directed edges) without any cycles (acyclic). This ensures that data flows smoothly from one stage to the next, such as data extraction, transformation, and loading (ETL) processes.<br>
@@ -70,6 +71,11 @@ View Implementation: [Collaborative Filtering](https://github.com/bowbowbow/Coll
 
 ### 4. Personalized notification 
 We can notify the user when other profile has viwed the users profile or when there is an any like comment on the post of user. which makes user to be active on the app and respond quickly. this makes the user updated with his profile related subjects.
+
+Notifications in linkdein are for keeping users informed about activities relevant to their projects and interactions. They provide real-time updates on events such as comments likes discussions. Notifications help users stay informed about discussions they’re involved in or grouos they’re interested in, ensuring timely responses and active participation in collaborative workflows. Users can manage notifications through personalized settings, choosing to receive updates via email, web notifications, or both, based on their preferences.
+
+We can employs event-driven architecture to handle these events, where each event triggers specific actions or notifications based on predefined rules and user preferences. This approach enables seamless integration of real-time updates into the platform, enhancing collaboration and ensuring that users stay informed about critical activities within their projects. By efficiently managing event handling and dispatch, We can facilitates smooth communication, timely responses, and effective management across its platform.<br>
+- **Time Complexity:** O[1]
 
 
 ### 5.Content Display to user
