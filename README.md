@@ -60,6 +60,10 @@ The users should be able to search the profiles and content across the globe, so
 Indexing: O(n log n) where n is the number of items.<br>
 Querying: O(k + log n) where k is the number of query terms.<br>
 
+<p align="center">
+  <img src="https://github.com/dheerajdhegde/dheerajdhegde.github.io/assets/105264588/f6d8ba73-97da-4a00-b2f2-55e25ddd8fc4" width="300" alt="HLD-Youtube">
+</p>
+
 **Trie for Prefix Search:** Supports efficient prefix-based search and autocomplete.<br>
 - **Algorithm:** Trie (Prefix Tree) <br>
 - **Time Complexity:** <br>
@@ -69,6 +73,12 @@ View Implementation: [Trie](https://github.com/dheerajdhegde/dheerajdhegde.githu
 
 ### 3. Content Recommendation System
 The users should recieve recommendations of content on basis of there activitiy and the activity of there connections. so that they be updated on the content most of there links consume.<br>
+
+<p align="center">
+  <img src="https://github.com/dheerajdhegde/dheerajdhegde.github.io/assets/105264588/5921ddc1-55ff-4c98-852c-9079e3aadc6b" width="300" alt="HLD-Youtube">
+</p>
+
+
 **Collaborative filtering:** This technique analyzes user behavior and interactions to suggest connections, jobs, or content similar to what others with similar profiles have engaged with.  Imagine it as finding users who walk a similar professional path and recommending things that were valuable to them.
 - **Time Complexity:** O(U*I^2) where U and I represent the total number of Users and Items.
 - **Space Complexity:** O(U*I) for the 2D matrix  
@@ -85,6 +95,11 @@ We can employs event-driven architecture to handle these events, where each even
 
 ### 5.Content Display to user
 We can optimizes the content display by employing Lazy Propagation to update content metrics based on user interactions effectively. This approach ensures that relevant and engaging content is prominently featured to increase user engagement and interaction on the platform.<br>
+
+<p align="center">
+  <img src="https://github.com/dheerajdhegde/dheerajdhegde.github.io/assets/105264588/7ed74dda-3b44-47dd-8eb4-c82e8524d7b3" width="300" alt="HLD-Youtube">
+</p>
+
 - **Time Complexity:** <br>
 Update with lazy propagation: O(log N)<br>
 Query with lazy propagation: O(log N) per affected node
@@ -92,8 +107,12 @@ Query with lazy propagation: O(log N) per affected node
 - **Space Complexity:** O(N) due to the segment tree and the lazy array.<br>
 View Implementation:[Lazy Propogation](https://github.com/dheerajdhegde/dheerajdhegde.github.io/blob/main/codes/lazy_propogation.cpp)
 
-### 6. Conections
+### 6. Connections
 Our users should get recommendations of new connections on the basis of there previous connection. here we can find out new connection by figuriong the mutual connections between the user links. we can use algorithms such as BFS(Breadth First Search) and DFS(Depth First Search) to find the shoretes or nearest connection in the network of user. 
+
+<p align="center">
+  <img src="https://github.com/dheerajdhegde/dheerajdhegde.github.io/assets/105264588/d687c4ab-4543-4255-8e20-1b40b1643f65" width="300" alt="HLD-Youtube">
+</p>
 
 **BFS** <br>
 - **Time Complexity:** O(V + E) where V is the number of vertices and E is the number of edges in the graph<br>
@@ -117,6 +136,11 @@ We can recommend users the professional groups in a logical and sequential order
 ### 8. Load Balancing
 Our app handles a high volume of data requests over a network, directing user requests to the server with minimal resource usage, such as CPU, memory, and bandwidth. This is particularly crucial when popular posts are being watched by millions of users. Given that our servers vary in resources like RAM and memory, it's essential to manage incoming requests effectively and direct them to servers that can process them efficiently. Load balancing algorithms such as Round Robin and Weighted Round Robin help distribute requests based on server metrics
 
+<p align="center">
+  <img src="https://github.com/dheerajdhegde/dheerajdhegde.github.io/assets/105264588/4d3b2fd9-bd4e-4f18-84e1-d33284aaab1e" width="300" alt="HLD-Youtube">
+</p>
+
+
 **Round Robin**: Static, Greedy approach
 - **Time Complexity:** O(1) if number of servers are static.
 - **Space Complexity:** O(N) where N represents number of servers.
@@ -129,6 +153,9 @@ Our app handles a high volume of data requests over a network, directing user re
 
 ### 9. Job Recommendation
 For recommendation of jobs for users we can sort the data and display the tabel of hiring data whcih matches with the profile data of users. to do this we can use merge sort which has best performance for large datasets and can give less complexity.
+
+![mergesort](https://github.com/dheerajdhegde/dheerajdhegde.github.io/assets/105264588/e2113594-638a-44a0-9514-6c24f85ff5d5)
+
 **Merge Sort**: 
 - **Time Complexity:** O(N*log(N)) here N number of modes.
 - **Space Complexity:** O(N) where N represents number of nodes.
@@ -145,6 +172,11 @@ The activity of user to be maintained as the metrics to know the time spent, lik
 
 ### 11. Skill score
 We can have a test or survey for the users and have a skill score which can be then diff with other user skill score which shares the same skills and intrests. so that user can get where user is placed in the rank of skill. Here we can use diff algorithms 
+
+<p align="center">
+  <img src="https://github.com/dheerajdhegde/dheerajdhegde.github.io/assets/105264588/41fd14e9-3db4-4e3e-8a53-78308b1f80f8" width="300" alt="HLD-Youtube">
+</p>
+
 **Diff Array implementation**
 - **Time Complexity:**  O(N), where N is the number of skills .
 - **Space Complexity:**  O(M + K), where M is the number of skills and K is the number of recommended skills.
@@ -152,6 +184,11 @@ We can have a test or survey for the users and have a skill score which can be t
   
 ### 12. Efficient Storage of Data
 We need to store the user data efficiently which can save our resources and time. so we need to compress some data as mages videos and more and store in the database. to carryout these we can use huffman coding for compression of the data. it is a losless compression so the here the loss of data is minimum.
+
+<p align="center">
+  <img src="https://github.com/dheerajdhegde/dheerajdhegde.github.io/assets/105264588/db64c961-56a5-4132-99a7-f1e7107db5e0" width="300" alt="HLD-Youtube">
+</p>
+
 **Huffman coding:** Greedy technique
 - **Time Complexity:** O(nlog(n)) where n is number of unique characters.
 - **Space Complexity:** Linear [O(n)], for storing Huffman tree and encoded data.
@@ -163,6 +200,11 @@ We should also have an service where spam content or illogical content can be pr
 
 ### 14. Auto suggest:
 While searching any content user tend to make some typing mistakes so to prevent them or to correct them we can use algorithms such as radix tree where the data stored in nodes in a serial of words where as the user types we move towards deeper intree and can guess the word while the user is typing.
+
+<p align="center">
+  <img src="https://github.com/dheerajdhegde/dheerajdhegde.github.io/assets/105264588/42ced362-59f9-4f9b-b1d5-77edc135e899" width="300" alt="HLD-Youtube">
+</p>
+
 **Radix Tree**
 - **Time Complexity:** O(n) where n is number of word in node.
 - **Space Complexity:** O(N), where N is the total number of characters in all the stored strings.
