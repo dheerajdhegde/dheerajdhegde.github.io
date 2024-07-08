@@ -35,15 +35,20 @@ LinkedIn is a premier professional networking platform that connects millions of
 ### 1.Directed Acyclic Graph(DAG):
  We can use DAGs to manage and orchestrate data pipelines. In these pipelines, various data processing tasks (nodes) are executed in a specific order (directed edges) without any cycles (acyclic). This ensures that data flows smoothly from one stage to the next, such as data extraction, transformation, and loading (ETL) processes.<br>
  this can help us to manage resources efficiently with minimized cost.
-**Design techniques and algorithms:**  
--  **Topological Sort for DAGs:** DFS based solution
-   - **Time Complexity:** O(V+E) where V represents several tasks and E represents the dependencies/ edges of DAG.
-   - **Space Complexity:** O(V). The extra space is needed for the stack.
-   - view Implementation: [Topological_sort](https://github.com/dheerajdhegde/dheerajdhegde.github.io/blob/main/codes/topological_sort.cpp)
--  **Priority queues** Min/Max heap, C++ std::priority_queue
-   - **Time Complexity:** O(logN) for insertion and deletion (push and pop)
-   - **Space Complexity:** O(N)
-   - View Implementation: [Priority](https://github.com/dheerajdhegde/dheerajdhegde.github.io/blob/main/codes/priority.cpp)
+ <p align="center">
+  <img src="https://github.com/dheerajdhegde/dheerajdhegde.github.io/assets/105264588/9206d8f4-a05e-4aa2-8abc-18a112a76cff" width="300" alt="HLD-Youtube">
+</p>
+
+**Design techniques and algorithms:** <br> 
+-  **Topological Sort for DAGs:** DFS based solution<br>
+   - **Time Complexity:** O(V+E) where V represents several tasks and E represents the dependencies/ edges of DAG.<br>
+   - **Space Complexity:** O(V). The extra space is needed for the stack.<br>
+   - View Implementation: [Topological_sort](https://github.com/dheerajdhegde/dheerajdhegde.github.io/blob/main/codes/topological_sort.cpp)<br>
+-  **Priority queues** Min/Max heap, C++ std::priority_queue<br>
+   - **Time Complexity:** O(logN) for insertion and deletion (push and pop)<br>
+   - **Space Complexity:** O(N)<br>
+   - View Implementation: [Priority](https://github.com/dheerajdhegde/dheerajdhegde.github.io/blob/main/codes/priority.cpp)<br>
+  
 
 
 ### 2.Efficient Search 
@@ -62,8 +67,8 @@ Insertion: O(m) where m is the length of the key.<br>
 Search: O(m) where m is the length of the key.<br>
 View Implementation: [Trie](https://github.com/dheerajdhegde/dheerajdhegde.github.io/blob/main/codes/trie.cpp)
 
-### 3. Recommendation System
-The users should recieve recommendations on basis of there mutual and common links they have creted where new links and content both can be recomended.<br>
+### 3. Content Recommendation System
+The users should recieve recommendations of content on basis of there activitiy and the activity of there connections. so that they be updated on the content most of there links consume.<br>
 **Collaborative filtering:** This technique analyzes user behavior and interactions to suggest connections, jobs, or content similar to what others with similar profiles have engaged with.  Imagine it as finding users who walk a similar professional path and recommending things that were valuable to them.
 - **Time Complexity:** O(U*I^2) where U and I represent the total number of Users and Items.
 - **Space Complexity:** O(U*I) for the 2D matrix  
@@ -86,6 +91,82 @@ Query with lazy propagation: O(log N) per affected node
 
 - **Space Complexity:** O(N) due to the segment tree and the lazy array.<br>
 View Implementation:[Lazy Propogation](https://github.com/dheerajdhegde/dheerajdhegde.github.io/blob/main/codes/lazy_propogation.cpp)
+
+### 6. Conections
+Our users should get recommendations of new connections on the basis of there previous connection. here we can find out new connection by figuriong the mutual connections between the user links. we can use algorithms such as BFS(Breadth First Search) and DFS(Depth First Search) to find the shoretes or nearest connection in the network of user. 
+
+**BFS** <br>
+- **Time Complexity:** O(V + E) where V is the number of vertices and E is the number of edges in the graph<br>
+- **Space Complexity:** O(V + E), where V is the number of nodes and E is the number of edges. The space complexity of the algorithm is O(V).<br>
+View Implementation:[BFS](https://github.com/dheerajdhegde/dheerajdhegde.github.io/blob/main/codes/BFS.cpp)
+
+**DFS** <br>
+- **Time Complexity:** s O(V + E), where V represents the number of vertices and E represents the number of edges in the graph.<br>
+- **Space Complexity:** O(V), where V represents the number of vertices in the graph.<br>
+View Implementation:[DFS](https://github.com/dheerajdhegde/dheerajdhegde.github.io/blob/main/codes/DFS.cpp)
+
+### 7. Collaboration or Groups
+We can recommend users the professional groups in a logical and sequential order, considering their current affiliations, interests, and activities. Joining these relevant groups can greatly enhance users' professional networks, provide valuable content, and foster meaningful interactions. Here we can use dijkstra to find the nearest link with the same skills and intrests and can make a group with them.
+**Dijkstra**
+- **Time Complexity:**  O(V2) when using a simple array implementation or O((V + E) log V) with a priority queue.
+- **Space Complexity:**  O(V) to O(E + V), where V is the number of vertices and E is the number of edges in the graph.
+  View Implementation:[Dijkstra](https://github.com/dheerajdhegde/dheerajdhegde.github.io/blob/main/codes/dijkstra.cpp)
+
+
+
+### 8. Load Balancing
+Our app handles a high volume of data requests over a network, directing user requests to the server with minimal resource usage, such as CPU, memory, and bandwidth. This is particularly crucial when popular posts are being watched by millions of users. Given that our servers vary in resources like RAM and memory, it's essential to manage incoming requests effectively and direct them to servers that can process them efficiently. Load balancing algorithms such as Round Robin and Weighted Round Robin help distribute requests based on server metrics
+
+**Round Robin**: Static, Greedy approach
+- **Time Complexity:** O(1) if number of servers are static.
+- **Space Complexity:** O(N) where N represents number of servers.
+  View Implementation:[Round_robin](https://github.com/dheerajdhegde/dheerajdhegde.github.io/blob/main/codes/Round_robin.cpp)
+**Weighted Round Robin**: Static, Greedy approach
+-**Time Complexity:** O(1) if number of servers are static.
+-**Space Complexity:** O(N) where N represents number of servers.
+  View Implementation:[Weighted_Round_robin](https://github.com/dheerajdhegde/dheerajdhegde.github.io/blob/main/codes/Weighted_RR.cpp)
+
+
+### 9. Job Recommendation
+For recommendation of jobs for users we can sort the data and display the tabel of hiring data whcih matches with the profile data of users. to do this we can use merge sort which has best performance for large datasets and can give less complexity.
+**Merge Sort**: 
+- **Time Complexity:** O(N*log(N)) here N number of modes.
+- **Space Complexity:** O(N) where N represents number of nodes.
+  View Implementation:[Merge_sort](https://github.com/dheerajdhegde/dheerajdhegde.github.io/blob/main/codes/Merge_sort.cpp)
+
+
+### 10. Activity
+The activity of user to be maintained as the metrics to know the time spent, likes, dislikes. here we can implement an fenwick tree where it stores the time stamp or the count of access. from where we can get time of specific hour or day by range sum queries
+**Fenwick Tree Array implementation**
+- **Time Complexity:** O(NlogN) for tree, O(logN) for update where N is the number of nodes.
+- **Space Complexity:** O(N)
+ View Implementation:[Fenwick_tree](https://github.com/dheerajdhegde/dheerajdhegde.github.io/blob/main/codes/Fenwick_tree.cpp)
+
+
+### 11. Skill score
+We can have a test or survey for the users and have a skill score which can be then diff with other user skill score which shares the same skills and intrests. so that user can get where user is placed in the rank of skill. Here we can use diff algorithms 
+**Diff Array implementation**
+- **Time Complexity:**  O(N), where N is the number of skills .
+- **Space Complexity:**  O(M + K), where M is the number of skills and K is the number of recommended skills.
+ View Implementation:[Diff](https://github.com/dheerajdhegde/dheerajdhegde.github.io/blob/main/codes/diff.cpp)
+  
+### 12. Efficient Storage of Data
+We need to store the user data efficiently which can save our resources and time. so we need to compress some data as mages videos and more and store in the database. to carryout these we can use huffman coding for compression of the data. it is a losless compression so the here the loss of data is minimum.
+**Huffman coding:** Greedy technique
+- **Time Complexity:** O(nlog(n)) where n is number of unique characters.
+- **Space Complexity:** Linear [O(n)], for storing Huffman tree and encoded data.
+View Implementation:[Huffman_coding](https://github.com/dheerajdhegde/dheerajdhegde.github.io/blob/main/codes/huffmann.cpp)
+- 
+
+### 13. Spam Filter
+We should also have an service where spam content or illogical content can be prevented and ersased from the data so we can use algorithms such as Bayesian Spam Filter to detect spam content where this is model which is trained to detect whether the content is spam or not. so this is a probability algorihtm where we differentiate the data as spam or not
+
+### 14. Auto suggest:
+While searching any content user tend to make some typing mistakes so to prevent them or to correct them we can use algorithms such as radix tree where the data stored in nodes in a serial of words where as the user types we move towards deeper intree and can guess the word while the user is typing.
+**Radix Tree**
+- **Time Complexity:** O(n) where n is number of word in node.
+- **Space Complexity:** O(N), where N is the total number of characters in all the stored strings.
+View Implementation:[Radix_tree](https://github.com/dheerajdhegde/dheerajdhegde.github.io/blob/main/codes/radix.cpp)
 
 
 
