@@ -33,6 +33,7 @@ LinkedIn is a premier professional networking platform that connects millions of
 
 ### 1.Directed Acyclic Graph(DAG):
  We can use DAGs to manage and orchestrate data pipelines. In these pipelines, various data processing tasks (nodes) are executed in a specific order (directed edges) without any cycles (acyclic). This ensures that data flows smoothly from one stage to the next, such as data extraction, transformation, and loading (ETL) processes.   This can help us to manage resources efficiently with minimized cost.<br> 
+ 
  **Challenges:** Handling large data like posts, videos, images and allocating resources.<br> 
  **benefits:** The storage of data will be efficienltly managed. <br> 
  <p align="center">
@@ -52,6 +53,7 @@ LinkedIn is a premier professional networking platform that connects millions of
 
 ### 2.Efficient Search 
 The users should be able to search the profiles and content across the globe, Our search should be relevant and faster which should consits of auto-suggestion. So we can use Trie tree so that the search user types is readily sorted or understood by algortihm by discarding the irrelevant configuration of words. which can make our app to guess and preload the search to be done. <br> 
+
 **Challenges:** To Handle large data and processing.<br> 
 **benefits:**  Quickly finding relevant information<br> 
 
@@ -96,7 +98,7 @@ We can notify the user when other profile has viwed the users profile or when th
 
 Notifications in linkdein are for keeping users informed about activities relevant to their projects and interactions. They provide real-time updates on events such as comments likes discussions. Notifications help users stay informed about discussions they’re involved in or grouos they’re interested in, ensuring timely responses and active participation in collaborative workflows. Users can manage notifications through personalized settings, choosing to receive updates via email, web notifications, or both, based on their preferences.
 
-We can employs event-driven architecture to handle these events, where each event triggers specific actions or notifications based on predefined rules and user preferences. This approach enables seamless integration of real-time updates into the platform, enhancing collaboration and ensuring that users stay informed about critical activities within their projects. By efficiently managing event handling and dispatch, We can facilitates smooth communication, timely responses, and effective management across its platform.<br>.
+We can employs event-driven architecture to handle these events, where each event triggers specific actions or notifications based on predefined rules and user preferences. This approach enables seamless integration of real-time updates into the platform, enhancing collaboration and ensuring that users stay informed about critical activities within their projects. By efficiently managing event handling and dispatch, We can facilitates smooth communication, timely responses, and effective management across its platform.<br>
 
 **Challenges:** Ensuring privacy and avoiding notification fatigue.<br> 
 **Benefits:** Increased user engagement and satisfaction.<br> 
@@ -237,7 +239,7 @@ We need to store the user data efficiently which can save our resources and time
 - **Time Complexity:** O(nlog(n)) where n is number of unique characters.
 - **Space Complexity:** Linear [O(n)], for storing Huffman tree and encoded data.
 View Implementation:[Huffman_coding](https://github.com/dheerajdhegde/dheerajdhegde.github.io/blob/main/codes/huffmann.cpp)
-- 
+
 
 ### 13. Spam Filter
 We should also have an service where spam content or illogical content can be prevented and ersased from the data so we can use algorithms such as Bayesian Spam Filter to detect spam content where this is model which is trained to detect whether the content is spam or not. so this is a probability algorihtm where we differentiate the data as spam or not
