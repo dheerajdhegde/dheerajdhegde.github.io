@@ -157,7 +157,7 @@ We can recommend users the professional groups in a logical and sequential order
 
 
 ### 8. Load Balancing
-Our app handles a high volume of data requests over a network, directing user requests to the server with minimal resource usage, such as CPU, memory, and bandwidth. This is particularly crucial when popular posts are being watched by millions of users. Given that our servers vary in resources like RAM and memory, it's essential to manage incoming requests effectively and direct them to servers that can process them efficiently. Load balancing algorithms such as Round Robin and Weighted Round Robin help distribute requests based on server metrics[5]. 
+Our app handles a high volume of data requests over a network, directing user requests to the server with minimal resource usage, such as CPU, memory, and bandwidth. This is particularly crucial when popular posts are being watched by millions of users. Given that our servers vary in resources like RAM and memory, it's essential to manage incoming requests effectively and direct them to servers that can process them efficiently. Load balancing algorithms such as Round Robin and Weighted Round Robin help distribute requests based on server metrics[5].<br> 
 **Challenges:** Efficiently managing resource allocation and preventing server overloads. <br> 
 **Benefits:** Ensures optimal performance and reliability, even under high traffic. <br> 
 <p align="center">
@@ -178,8 +178,8 @@ Our app handles a high volume of data requests over a network, directing user re
 
 ### 9. Job Recommendation
 For recommendation of jobs for users we can sort the data and display the tabel of hiring data which matches with the profile data of users. to do this we can use merge sort which has best performance for large datasets and can give less complexity. By sorting the data of hiring we can provide an hiring list and most similar job as per required skill.<br>
-**Challenges:** Matching diverse user profiles with job criteria and managing real-time updates.
-**Benefits:** Facilitates tailored job recommendations based on user skills and preferences, enhancing job search efficiency.
+**Challenges:** Matching diverse user profiles with job criteria and managing real-time updates.<br>
+**Benefits:** Facilitates tailored job recommendations based on user skills and preferences, enhancing job search efficiency.<br>
 
 <p align="center">
   <img src="https://github.com/dheerajdhegde/dheerajdhegde.github.io/assets/105264588/e2113594-638a-44a0-9514-6c24f85ff5d5" width="500" alt="HLD-Youtube">
