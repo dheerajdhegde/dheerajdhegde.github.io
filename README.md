@@ -140,7 +140,7 @@ We can recommend users the professional groups in a logical and sequential order
 
 
 ### 8. Load Balancing
-Our app handles a high volume of data requests over a network, directing user requests to the server with minimal resource usage, such as CPU, memory, and bandwidth. This is particularly crucial when popular posts are being watched by millions of users. Given that our servers vary in resources like RAM and memory, it's essential to manage incoming requests effectively and direct them to servers that can process them efficiently. Load balancing algorithms such as Round Robin and Weighted Round Robin help distribute requests based on server metrics
+Our app handles a high volume of data requests over a network, directing user requests to the server with minimal resource usage, such as CPU, memory, and bandwidth. This is particularly crucial when popular posts are being watched by millions of users. Given that our servers vary in resources like RAM and memory, it's essential to manage incoming requests effectively and direct them to servers that can process them efficiently. Load balancing algorithms such as Round Robin and Weighted Round Robin help distribute requests based on server metrics.[5]
 
 <p align="center">
   <img src="https://github.com/dheerajdhegde/dheerajdhegde.github.io/assets/105264588/49815250-1f76-4f63-b9b2-6b5750c170fb" width="500" alt="HLD-Youtube">
@@ -174,7 +174,7 @@ The activity of user to be maintained as the metrics to know the time spent, lik
 **Fenwick Tree**
 - **Time Complexity:** O(NlogN) for tree, O(logN) for update where N is the number of nodes.
 - **Space Complexity:** O(N)
- View Implementation:[Fenwick_tree](https://github.com/dheerajdhegde/dheerajdhegde.github.io/blob/main/codes/Fenwick_tree.cpp)
+ View Implementation:[Fenwick_tree](https://github.com/dheerajdhegde/dheerajdhegde.github.io/blob/main/codes/Fenwick_tree.cpp).[6]
 
 
 ### 11. Skill score
@@ -224,6 +224,7 @@ View Implementation:[Radix_tree](https://github.com/dheerajdhegde/dheerajdhegde.
 [3] Wikipedia. (2024). "Dijkstra's Algorithm". Online. Wikipedia. [https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm)   
 [4] Ravi K. (2024). "Topological Sorting". Online. Naukri. [https://www.naukri.com/code360/library/topological-sorting](https://www.naukri.com/code360/library/topological-sorting)  
 [5] PsychzNetworks. (2020). "CDN and Load Balancer: Ultimate combination for efficient content delivery". Online. PsychzNetworks. [https://www.psychz.net/client/blog/en/cdn-and-load-balancer-ultimate-combination-for-efficient-content-delivery-.html](https://www.psychz.net/client/blog/en/cdn-and-load-balancer-ultimate-combination-for-efficient-content-delivery-.html)  
+[6]GeeksForGeeks. "Fenwick Tree for efficient activity ananlysis "[https://www.geeksforgeeks.org/binary-indexed-tree-or-fenwick-tree-2/]
 
 
 
