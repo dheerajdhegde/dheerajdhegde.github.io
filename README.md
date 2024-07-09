@@ -32,8 +32,7 @@ LinkedIn is a premier professional networking platform that connects millions of
 ## Features
 
 ### 1.Directed Acyclic Graph(DAG):
- We can use DAGs to manage and orchestrate data pipelines. In these pipelines, various data processing tasks (nodes) are executed in a specific order (directed edges) without any cycles (acyclic). This ensures that data flows smoothly from one stage to the next, such as data extraction, transformation, and loading (ETL) processes.<br>
- this can help us to manage resources efficiently with minimized cost.
+ We can use DAGs to manage and orchestrate data pipelines. In these pipelines, various data processing tasks (nodes) are executed in a specific order (directed edges) without any cycles (acyclic). This ensures that data flows smoothly from one stage to the next, such as data extraction, transformation, and loading (ETL) processes.   This can help us to manage resources efficiently with minimized cost.
  <p align="center">
   <img src="https://github.com/dheerajdhegde/dheerajdhegde.github.io/assets/105264588/26ccaa1a-c28b-4ed5-b023-cd35a0f140ac" width="300" alt="HLD-Youtube">
 </p>
@@ -58,8 +57,8 @@ The users should be able to search the profiles and content across the globe, so
 Indexing: O(n log n) where n is the number of items.<br>
 Querying: O(k + log n) where k is the number of query terms.<br>
 
-<p>
-  <img src="https://github.com/dheerajdhegde/dheerajdhegde.github.io/assets/105264588/03981554-44cc-48eb-8f06-a63debd0b9d8" width="300" alt="HLD-Youtube">
+<p align="center">
+  <img src="https://github.com/dheerajdhegde/dheerajdhegde.github.io/assets/105264588/03981554-44cc-48eb-8f06-a63debd0b9d8" width="500" alt="HLD-Youtube">
 </p>
 
 
@@ -74,8 +73,9 @@ View Implementation: [Trie](https://github.com/dheerajdhegde/dheerajdhegde.githu
 The users should recieve recommendations of content on basis of there activitiy and the activity of there connections. so that they be updated on the content most of there links consume.<br>
 
 <p align="center">
-  <img src="https://github.com/dheerajdhegde/dheerajdhegde.github.io/assets/105264588/5921ddc1-55ff-4c98-852c-9079e3aadc6b" width="300" alt="HLD-Youtube">
+  <img src="https://github.com/dheerajdhegde/dheerajdhegde.github.io/assets/105264588/4e9b5fe9-4c11-454b-bbf3-d5b8a161071c" width="400" alt="HLD-Youtube">
 </p>
+
 
 
 **Collaborative filtering:** This technique analyzes user behavior and interactions to suggest connections, jobs, or content similar to what others with similar profiles have engaged with.  Imagine it as finding users who walk a similar professional path and recommending things that were valuable to them.
@@ -96,7 +96,7 @@ We can employs event-driven architecture to handle these events, where each even
 We can optimizes the content display by employing Lazy Propagation to update content metrics based on user interactions effectively. This approach ensures that relevant and engaging content is prominently featured to increase user engagement and interaction on the platform.<br>
 
 <p align="center">
-  <img src="https://github.com/dheerajdhegde/dheerajdhegde.github.io/assets/105264588/7ed74dda-3b44-47dd-8eb4-c82e8524d7b3" width="300" alt="HLD-Youtube">
+  <img src="https://github.com/dheerajdhegde/dheerajdhegde.github.io/assets/105264588/e3be1afa-519a-40e6-b850-328c5f91c426" width="400" alt="HLD-Youtube">
 </p>
 
 - **Time Complexity:** <br>
@@ -110,8 +110,9 @@ View Implementation:[Lazy Propogation](https://github.com/dheerajdhegde/dheerajd
 Our users should get recommendations of new connections on the basis of there previous connection. here we can find out new connection by figuriong the mutual connections between the user links. we can use algorithms such as BFS(Breadth First Search) and DFS(Depth First Search) to find the shoretes or nearest connection in the network of user. 
 
 <p align="center">
-  <img src="https://github.com/dheerajdhegde/dheerajdhegde.github.io/assets/105264588/d687c4ab-4543-4255-8e20-1b40b1643f65" width="300" alt="HLD-Youtube">
+  <img src="https://github.com/dheerajdhegde/dheerajdhegde.github.io/assets/105264588/293ff03d-1a5c-4f23-868c-93f6bd060595" width="300" alt="HLD-Youtube">
 </p>
+
 
 **BFS** <br>
 - **Time Complexity:** O(V + E) where V is the number of vertices and E is the number of edges in the graph<br>
@@ -125,6 +126,12 @@ View Implementation:[DFS](https://github.com/dheerajdhegde/dheerajdhegde.github.
 
 ### 7. Collaboration or Groups
 We can recommend users the professional groups in a logical and sequential order, considering their current affiliations, interests, and activities. Joining these relevant groups can greatly enhance users' professional networks, provide valuable content, and foster meaningful interactions. Here we can use dijkstra to find the nearest link with the same skills and intrests and can make a group with them.
+
+<p align="center">
+  <img src="https://github.com/dheerajdhegde/dheerajdhegde.github.io/assets/105264588/eedc9f32-0c1d-40de-9359-c5bd8d334524" width="550" alt="HLD-Youtube">
+</p>
+
+
 **Dijkstra**
 - **Time Complexity:**  O(V2) when using a simple array implementation or O((V + E) log V) with a priority queue.
 - **Space Complexity:**  O(V) to O(E + V), where V is the number of vertices and E is the number of edges in the graph.
@@ -136,8 +143,7 @@ We can recommend users the professional groups in a logical and sequential order
 Our app handles a high volume of data requests over a network, directing user requests to the server with minimal resource usage, such as CPU, memory, and bandwidth. This is particularly crucial when popular posts are being watched by millions of users. Given that our servers vary in resources like RAM and memory, it's essential to manage incoming requests effectively and direct them to servers that can process them efficiently. Load balancing algorithms such as Round Robin and Weighted Round Robin help distribute requests based on server metrics
 
 <p align="center">
-  <img src="https://github.com/dheerajdhegde/dheerajdhegde.github.io/assets/105264588/4d3b2fd9-bd4e-4f18-84e1-d33284aaab1e" width="300" alt="HLD-Youtube">
-</p>
+  <img src="https://github.com/dheerajdhegde/dheerajdhegde.github.io/assets/105264588/49815250-1f76-4f63-b9b2-6b5750c170fb" width="500" alt="HLD-Youtube">
 
 
 **Round Robin**: Static, Greedy approach
@@ -173,7 +179,7 @@ The activity of user to be maintained as the metrics to know the time spent, lik
 We can have a test or survey for the users and have a skill score which can be then diff with other user skill score which shares the same skills and intrests. so that user can get where user is placed in the rank of skill. Here we can use diff algorithms 
 
 <p align="center">
-  <img src="https://github.com/dheerajdhegde/dheerajdhegde.github.io/assets/105264588/41fd14e9-3db4-4e3e-8a53-78308b1f80f8" width="300" alt="HLD-Youtube">
+  <img src="https://github.com/dheerajdhegde/dheerajdhegde.github.io/assets/105264588/41fd14e9-3db4-4e3e-8a53-78308b1f80f8" width="500" alt="HLD-Youtube">
 </p>
 
 **Diff Array implementation**
@@ -196,6 +202,7 @@ View Implementation:[Huffman_coding](https://github.com/dheerajdhegde/dheerajdhe
 
 ### 13. Spam Filter
 We should also have an service where spam content or illogical content can be prevented and ersased from the data so we can use algorithms such as Bayesian Spam Filter to detect spam content where this is model which is trained to detect whether the content is spam or not. so this is a probability algorihtm where we differentiate the data as spam or not
+
 
 ### 14. Auto suggest:
 While searching any content user tend to make some typing mistakes so to prevent them or to correct them we can use algorithms such as radix tree where the data stored in nodes in a serial of words where as the user types we move towards deeper intree and can guess the word while the user is typing.
