@@ -51,7 +51,10 @@ LinkedIn is a premier professional networking platform that connects millions of
 
 
 ### 2.Efficient Search 
-The users should be able to search the profiles and content across the globe, so we can use the algorithms
+The users should be able to search the profiles and content across the globe, Our search should be relevant and faster which should consits of auto-suggestion. So we can use Trie tree so that the search user types is readily sorted or understood by algortihm by discarding the irrelevant configuration of words. which can make our app to guess and preload the search to be done. 
+**Challenges:** To Handle large data and processing.
+
+**benefits:**  Quickly finding relevant information
 
 **Full-Text Search:** Searches within documentation and repositories.<br>
 - **Algorithm:** Inverted Index <br>
@@ -72,7 +75,7 @@ Search: O(m) where m is the length of the key.<br>
 View Implementation: [Trie](https://github.com/dheerajdhegde/dheerajdhegde.github.io/blob/main/codes/trie.cpp)
 
 ### 3. Content Recommendation System
-The users should recieve recommendations of content on basis of there activitiy and the activity of there connections. so that they be updated on the content most of there links consume.<br>
+The users should recieve recommendations of content on basis of there activitiy and the activity of there connections. so that they be updated on the content most of there links consume.Here we can make group of users which consume similar content and further we can suggest the content of user1 which user2 has not watched. this can make relevant conent shared to the the users with similar goals, skills, and intrest.this is known as collaborative filtering where the content is shared to each other collaborative way<br>
 
 <p align="center">
   <img src="https://github.com/dheerajdhegde/dheerajdhegde.github.io/assets/105264588/4e9b5fe9-4c11-454b-bbf3-d5b8a161071c" width="400" alt="HLD-Youtube">
