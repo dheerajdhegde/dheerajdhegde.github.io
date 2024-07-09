@@ -84,6 +84,10 @@ The users should recieve recommendations of content on basis of there activitiy 
 
 
 **Collaborative filtering:** This technique analyzes user behavior and interactions to suggest connections, jobs, or content similar to what others with similar profiles have engaged with.  Imagine it as finding users who walk a similar professional path and recommending things that were valuable to them.
+
+**Challenges:** Cold start problem and data sparsity.
+**Benefits:** Personalized and relevant content suggestions.
+
 - **Time Complexity:** O(U*I^2) where U and I represent the total number of Users and Items.
 - **Space Complexity:** O(U*I) for the 2D matrix  
 View Implementation: [Collaborative Filtering](https://github.com/bowbowbow/CollaborativeFiltering/blob/master/recommender.cpp)
@@ -93,12 +97,19 @@ We can notify the user when other profile has viwed the users profile or when th
 
 Notifications in linkdein are for keeping users informed about activities relevant to their projects and interactions. They provide real-time updates on events such as comments likes discussions. Notifications help users stay informed about discussions they’re involved in or grouos they’re interested in, ensuring timely responses and active participation in collaborative workflows. Users can manage notifications through personalized settings, choosing to receive updates via email, web notifications, or both, based on their preferences.
 
-We can employs event-driven architecture to handle these events, where each event triggers specific actions or notifications based on predefined rules and user preferences. This approach enables seamless integration of real-time updates into the platform, enhancing collaboration and ensuring that users stay informed about critical activities within their projects. By efficiently managing event handling and dispatch, We can facilitates smooth communication, timely responses, and effective management across its platform.<br>
+We can employs event-driven architecture to handle these events, where each event triggers specific actions or notifications based on predefined rules and user preferences. This approach enables seamless integration of real-time updates into the platform, enhancing collaboration and ensuring that users stay informed about critical activities within their projects. By efficiently managing event handling and dispatch, We can facilitates smooth communication, timely responses, and effective management across its platform.<br>.
+**Challenges:** Ensuring privacy and avoiding notification fatigue.
+**Benefits:** Increased user engagement and satisfaction.
 - **Time Complexity:** O[1]
 
 
 ### 5.Content Display to user
-We can optimizes the content display by employing Lazy Propagation to update content metrics based on user interactions effectively. This approach ensures that relevant and engaging content is prominently featured to increase user engagement and interaction on the platform.<br>
+We can optimizes the content display by employing Lazy Propagation to update content metrics based on user interactions effectively. This approach ensures that relevant and engaging content is prominently featured to increase user engagement and interaction on the platform.
+Here we ca suggest new content in real tiem by processing the user previous content consumed. here we can use segment tree where the prefix array sum is calculated and new content is suggested.<br>
+**Challenges:** Efficiently handling real-time updates and large-scale data.
+
+**Benefits:** Dynamically delivering highly relevant content to boost user engagement.
+
 
 <p align="center">
   <img src="https://github.com/dheerajdhegde/dheerajdhegde.github.io/assets/105264588/e3be1afa-519a-40e6-b850-328c5f91c426" width="400" alt="HLD-Youtube">
@@ -112,7 +123,9 @@ Query with lazy propagation: O(log N) per affected node
 View Implementation:[Lazy Propogation](https://github.com/dheerajdhegde/dheerajdhegde.github.io/blob/main/codes/lazy_propogation.cpp)
 
 ### 6. Connections
-Our users should get recommendations of new connections on the basis of there previous connection. here we can find out new connection by figuriong the mutual connections between the user links. we can use algorithms such as BFS(Breadth First Search) and DFS(Depth First Search) to find the shoretes or nearest connection in the network of user. 
+Our users should get recommendations of new connections on the basis of there previous connection. here we can find out new connection by figuriong the mutual connections between the user links. we can use algorithms such as BFS(Breadth First Search) and DFS(Depth First Search) to find the shoretest or nearest connection in the network of user. this can make easy connection and grouping of users which can improve content sharing and collection. 
+**Challenges:** Managing computational complexity and maintaining up-to-date connection data.
+**Benefits:** Facilitates easier networking and enhances user community building.
 
 <p align="center">
   <img src="https://github.com/dheerajdhegde/dheerajdhegde.github.io/assets/105264588/293ff03d-1a5c-4f23-868c-93f6bd060595" width="300" alt="HLD-Youtube">
