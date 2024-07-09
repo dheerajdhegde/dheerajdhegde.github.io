@@ -177,7 +177,7 @@ Our app handles a high volume of data requests over a network, directing user re
 
 
 ### 9. Job Recommendation
-For recommendation of jobs for users we can sort the data and display the tabel of hiring data which matches with the profile data of users. to do this we can use merge sort which has best performance for large datasets and can give less complexity. By sorting the data of hiring we can provide an hiring list and most similar job as per required skill.
+For recommendation of jobs for users we can sort the data and display the tabel of hiring data which matches with the profile data of users. to do this we can use merge sort which has best performance for large datasets and can give less complexity. By sorting the data of hiring we can provide an hiring list and most similar job as per required skill.<br>
 **Challenges:** Matching diverse user profiles with job criteria and managing real-time updates.
 **Benefits:** Facilitates tailored job recommendations based on user skills and preferences, enhancing job search efficiency.
 
@@ -192,7 +192,9 @@ For recommendation of jobs for users we can sort the data and display the tabel 
 
 
 ### 10. Activity
-The activity of user to be maintained as the metrics to know the time spent, likes, dislikes. here we can implement an fenwick tree where it stores the time stamp or the count of access. from where we can get time of specific hour or day by range sum queries. This activity analysis can provide user a clear thought of there stronger and weaker side by which they can improve on the topics needed 
+The activity of user to be maintained as the metrics to know the time spent, likes, dislikes. here we can implement an fenwick tree where it stores the time stamp or the count of access. from where we can get time of specific hour or day by range sum queries. This activity analysis can provide user a clear thought of there stronger and weaker side by which they can improve on the topics needed. <br>
+**Challenges:** Efficiently tracking and analyzing user activity data in real-time. <br> 
+**Benefits:** Provides actionable insights for users to improve based on their activity patterns and preferences. <br> 
 **Fenwick Tree**
 - **Time Complexity:** O(NlogN) for tree, O(logN) for update where N is the number of nodes.
 - **Space Complexity:** O(N)
@@ -200,8 +202,9 @@ The activity of user to be maintained as the metrics to know the time spent, lik
 
 
 ### 11. Skill score
-We can have a test or survey for the users and have a skill score which can be then diff with other user skill score which shares the same skills and intrests. so that user can get where user is placed in the rank of skill. Here we can use diff algorithms 
-
+We can have a test or survey for the users and have a skill score which can be then diff with other user skill score which shares the same skills and intrests. so that user can get where user is placed in the rank of skill. Here we can use diff algorithms and get a difference in skills of users and can give a report of ther performace and the skill they have to learn and improve.<br>
+**Challenges:** Ensuring accurate skill assessment and meaningful comparisons across diverse user profiles.<br>
+**Benefits:** Facilitates personalized skill development insights and benchmarks, enhancing user growth and learning.<br>
 <p align="center">
   <img src="https://github.com/dheerajdhegde/dheerajdhegde.github.io/assets/105264588/41fd14e9-3db4-4e3e-8a53-78308b1f80f8" width="500" alt="HLD-Youtube">
 </p>
