@@ -159,7 +159,9 @@ Our app handles a high volume of data requests over a network, directing user re
 ### 9. Job Recommendation
 For recommendation of jobs for users we can sort the data and display the tabel of hiring data whcih matches with the profile data of users. to do this we can use merge sort which has best performance for large datasets and can give less complexity.
 
-![mergesort](https://github.com/dheerajdhegde/dheerajdhegde.github.io/assets/105264588/e2113594-638a-44a0-9514-6c24f85ff5d5)
+<p align="center">
+  <img src="https://github.com/dheerajdhegde/dheerajdhegde.github.io/assets/105264588/e2113594-638a-44a0-9514-6c24f85ff5d5" width="500" alt="HLD-Youtube">
+
 
 **Merge Sort**: 
 - **Time Complexity:** O(N*log(N)) here N number of modes.
@@ -169,7 +171,7 @@ For recommendation of jobs for users we can sort the data and display the tabel 
 
 ### 10. Activity
 The activity of user to be maintained as the metrics to know the time spent, likes, dislikes. here we can implement an fenwick tree where it stores the time stamp or the count of access. from where we can get time of specific hour or day by range sum queries
-**Fenwick Tree Array implementation**
+**Fenwick Tree**
 - **Time Complexity:** O(NlogN) for tree, O(logN) for update where N is the number of nodes.
 - **Space Complexity:** O(N)
  View Implementation:[Fenwick_tree](https://github.com/dheerajdhegde/dheerajdhegde.github.io/blob/main/codes/Fenwick_tree.cpp)
