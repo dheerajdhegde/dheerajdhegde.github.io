@@ -144,7 +144,7 @@ Our app handles a high volume of data requests over a network, directing user re
 
 <p align="center">
   <img src="https://github.com/dheerajdhegde/dheerajdhegde.github.io/assets/105264588/49815250-1f76-4f63-b9b2-6b5750c170fb" width="500" alt="HLD-Youtube">
-
+<p>
 
 **Round Robin**: Static, Greedy approach
 - **Time Complexity:** O(1) if number of servers are static.
@@ -161,7 +161,7 @@ For recommendation of jobs for users we can sort the data and display the tabel 
 
 <p align="center">
   <img src="https://github.com/dheerajdhegde/dheerajdhegde.github.io/assets/105264588/e2113594-638a-44a0-9514-6c24f85ff5d5" width="500" alt="HLD-Youtube">
-
+<p>
 
 **Merge Sort**: 
 - **Time Complexity:** O(N*log(N)) here N number of modes.
@@ -219,12 +219,12 @@ While searching any content user tend to make some typing mistakes so to prevent
 View Implementation:[Radix_tree](https://github.com/dheerajdhegde/dheerajdhegde.github.io/blob/main/codes/radix.cpp)
 
 ## Refernces
-[1]Wikipedia. -"Directed Acyclic Graph". [https://en.wikipedia.org/wiki/Directed_acyclic_graph.]
-[2] Dremio. (2024). "Huffman Coding". Online. Dreamio. [https://www.dremio.com/wiki/huffman-coding/](https://www.dremio.com/wiki/huffman-coding/)  
-[3] Wikipedia. (2024). "Dijkstra's Algorithm". Online. Wikipedia. [https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm)   
-[4] Ravi K. (2024). "Topological Sorting". Online. Naukri. [https://www.naukri.com/code360/library/topological-sorting](https://www.naukri.com/code360/library/topological-sorting)  
-[5] PsychzNetworks. (2020). "CDN and Load Balancer: Ultimate combination for efficient content delivery". Online. PsychzNetworks. [https://www.psychz.net/client/blog/en/cdn-and-load-balancer-ultimate-combination-for-efficient-content-delivery-.html](https://www.psychz.net/client/blog/en/cdn-and-load-balancer-ultimate-combination-for-efficient-content-delivery-.html)  
-[6]GeeksForGeeks. "Fenwick Tree for efficient activity ananlysis "[https://www.geeksforgeeks.org/binary-indexed-tree-or-fenwick-tree-2/]
+[1]Wikipedia. -"Directed Acyclic Graph". [https://en.wikipedia.org/wiki/Directed_acyclic_graph.]<br>
+[2] Dremio. (2024). "Huffman Coding". Online. Dreamio. [https://www.dremio.com/wiki/huffman-coding/](https://www.dremio.com/wiki/huffman-coding/)  <br>
+[3] Wikipedia. (2024). "Dijkstra's Algorithm". Online. Wikipedia. [https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm)   <br>
+[4] Ravi K. (2024). "Topological Sorting". Online. Naukri. [https://www.naukri.com/code360/library/topological-sorting](https://www.naukri.com/code360/library/topological-sorting)  <br>
+[5] PsychzNetworks. (2020). "CDN and Load Balancer: Ultimate combination for efficient content delivery". Online. PsychzNetworks. [https://www.psychz.net/client/blog/en/cdn-and-load-balancer-ultimate-combination-for-efficient-content-delivery-.html](https://www.psychz.net/client/blog/en/cdn-and-load-balancer-ultimate-combination-for-efficient-content-delivery-.html)  <br>
+[6]GeeksForGeeks. "Fenwick Tree for efficient activity ananlysis "[https://www.geeksforgeeks.org/binary-indexed-tree-or-fenwick-tree-2/]<br>
 
 
 
