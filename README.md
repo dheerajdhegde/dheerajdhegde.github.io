@@ -97,6 +97,7 @@ We can notify the user when other profile has viwed the users profile or when th
 Notifications in linkdein are for keeping users informed about activities relevant to their projects and interactions. They provide real-time updates on events such as comments likes discussions. Notifications help users stay informed about discussions they’re involved in or grouos they’re interested in, ensuring timely responses and active participation in collaborative workflows. Users can manage notifications through personalized settings, choosing to receive updates via email, web notifications, or both, based on their preferences.
 
 We can employs event-driven architecture to handle these events, where each event triggers specific actions or notifications based on predefined rules and user preferences. This approach enables seamless integration of real-time updates into the platform, enhancing collaboration and ensuring that users stay informed about critical activities within their projects. By efficiently managing event handling and dispatch, We can facilitates smooth communication, timely responses, and effective management across its platform.<br>.
+
 **Challenges:** Ensuring privacy and avoiding notification fatigue.<br> 
 **Benefits:** Increased user engagement and satisfaction.<br> 
 - **Time Complexity:** O[1]
@@ -105,6 +106,7 @@ We can employs event-driven architecture to handle these events, where each even
 ### 5.Content Display to user
 We can optimizes the content display by employing Lazy Propagation to update content metrics based on user interactions effectively. This approach ensures that relevant and engaging content is prominently featured to increase user engagement and interaction on the platform.
 Here we ca suggest new content in real tiem by processing the user previous content consumed. here we can use segment tree where the prefix array sum is calculated and new content is suggested.<br>
+
 **Challenges:** Efficiently handling real-time updates and large-scale data.<br> 
 **Benefits:** Dynamically delivering highly relevant content to boost user engagement.<br> 
 
@@ -122,6 +124,7 @@ View Implementation:[Lazy Propogation](https://github.com/dheerajdhegde/dheerajd
 
 ### 6. Connections
 Our users should get recommendations of new connections on the basis of there previous connection. here we can find out new connection by figuriong the mutual connections between the user links. we can use algorithms such as BFS(Breadth First Search) and DFS(Depth First Search) to find the shoretest or nearest connection in the network of user. this can make easy connection and grouping of users which can improve content sharing and collection. <br> 
+
 **Challenges:** Managing computational complexity and maintaining up-to-date connection data.<br> 
 **Benefits:** Facilitates easier networking and enhances user community building.<br> 
 
@@ -142,6 +145,7 @@ View Implementation:[DFS](https://github.com/dheerajdhegde/dheerajdhegde.github.
 
 ### 7. Collaboration or Groups
 We can recommend users the professional groups in a logical and sequential order, considering their current affiliations, interests, and activities. Joining these relevant groups can greatly enhance users' professional networks, provide valuable content, and foster meaningful interactions. Here we can use dijkstra to find the nearest link with the same skills and intrests and can make a group with them. the group created can increase in conetent sharing and generation which inturn helps in the user development <br> 
+
 **Challenges:** Accurately identifying relevant groups and handling dynamic user interests.<br> 
 **Benefits:** Enhances professional networking and promotes active content sharing and user development.<br> 
 <p align="center">
@@ -158,6 +162,7 @@ We can recommend users the professional groups in a logical and sequential order
 
 ### 8. Load Balancing
 Our app handles a high volume of data requests over a network, directing user requests to the server with minimal resource usage, such as CPU, memory, and bandwidth. This is particularly crucial when popular posts are being watched by millions of users. Given that our servers vary in resources like RAM and memory, it's essential to manage incoming requests effectively and direct them to servers that can process them efficiently. Load balancing algorithms such as Round Robin and Weighted Round Robin help distribute requests based on server metrics[5].<br> 
+
 **Challenges:** Efficiently managing resource allocation and preventing server overloads. <br> 
 **Benefits:** Ensures optimal performance and reliability, even under high traffic. <br> 
 <p align="center">
@@ -178,6 +183,7 @@ Our app handles a high volume of data requests over a network, directing user re
 
 ### 9. Job Recommendation
 For recommendation of jobs for users we can sort the data and display the tabel of hiring data which matches with the profile data of users. to do this we can use merge sort which has best performance for large datasets and can give less complexity. By sorting the data of hiring we can provide an hiring list and most similar job as per required skill.<br>
+
 **Challenges:** Matching diverse user profiles with job criteria and managing real-time updates.<br>
 **Benefits:** Facilitates tailored job recommendations based on user skills and preferences, enhancing job search efficiency.<br>
 
@@ -193,8 +199,10 @@ For recommendation of jobs for users we can sort the data and display the tabel 
 
 ### 10. Activity
 The activity of user to be maintained as the metrics to know the time spent, likes, dislikes. here we can implement an fenwick tree where it stores the time stamp or the count of access. from where we can get time of specific hour or day by range sum queries. This activity analysis can provide user a clear thought of there stronger and weaker side by which they can improve on the topics needed. <br>
+
 **Challenges:** Efficiently tracking and analyzing user activity data in real-time. <br> 
-**Benefits:** Provides actionable insights for users to improve based on their activity patterns and preferences. <br> 
+**Benefits:** Provides actionable insights for users to improve based on their activity patterns and preferences. <br>
+
 **Fenwick Tree**
 - **Time Complexity:** O(NlogN) for tree, O(logN) for update where N is the number of nodes.
 - **Space Complexity:** O(N)
@@ -203,6 +211,7 @@ The activity of user to be maintained as the metrics to know the time spent, lik
 
 ### 11. Skill score
 We can have a test or survey for the users and have a skill score which can be then diff with other user skill score which shares the same skills and intrests. so that user can get where user is placed in the rank of skill. Here we can use diff algorithms and get a difference in skills of users and can give a report of ther performace and the skill they have to learn and improve.<br>
+
 **Challenges:** Ensuring accurate skill assessment and meaningful comparisons across diverse user profiles.<br>
 **Benefits:** Facilitates personalized skill development insights and benchmarks, enhancing user growth and learning.<br>
 <p align="center">
@@ -215,7 +224,10 @@ We can have a test or survey for the users and have a skill score which can be t
  View Implementation:[Diff](https://github.com/dheerajdhegde/dheerajdhegde.github.io/blob/main/codes/diff.cpp)
   
 ### 12. Efficient Storage of Data
-We need to store the user data efficiently which can save our resources and time. so we need to compress some data as mages videos and more and store in the database. to carryout these we can use huffman coding for compression of the data. it is a losless compression so the here the loss of data is minimum.
+We need to store the user data efficiently which can save our resources and time. so we need to compress some data as mages videos and more and store in the database. to carryout these we can use huffman coding for compression of the data. it is a losless compression so the here the loss of data is minimum. <br>
+
+**Challenges:** Balancing compression ratio and computing costs.<br>
+**Benefits:** Cost reduction and Scalablity.<br>
 
 <p align="center">
   <img src="https://github.com/dheerajdhegde/dheerajdhegde.github.io/assets/105264588/db64c961-56a5-4132-99a7-f1e7107db5e0" width="300" alt="HLD-Youtube">
@@ -232,7 +244,10 @@ We should also have an service where spam content or illogical content can be pr
 
 
 ### 14. Auto suggest:
-While searching any content user tend to make some typing mistakes so to prevent them or to correct them we can use algorithms such as radix tree where the data stored in nodes in a serial of words where as the user types we move towards deeper intree and can guess the word while the user is typing.
+While searching any content user tend to make some typing mistakes so to prevent them or to correct them we can use algorithms such as radix tree where the data stored in nodes in a serial of words where as the user types we move towards deeper intree and can guess the word while the user is typing.<br>
+
+**Challenges:** Real-time correction, predicting user’s intent.<br>
+**Benefits:** Improved user experience and increased user retention rates.<br>
 
 <p align="center">
   <img src="https://github.com/dheerajdhegde/dheerajdhegde.github.io/assets/105264588/42ced362-59f9-4f9b-b1d5-77edc135e899" width="300" alt="HLD-Youtube">
