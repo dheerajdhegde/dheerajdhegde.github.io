@@ -10,12 +10,13 @@
 
 - [Introduction](#introduction)
 - [Objectives](#objectives)
-- [BusinessCases](#BusinessCases)
+- [Features](#features)
 
 ## Introduction
 LinkedIn is a premier professional networking platform that connects millions of individuals and businesses globally. It allows users to create comprehensive profiles detailing their skills, experiences, and accomplishments, making it easier to highlight their professional journey. LinkedIn provides a dynamic space for networking, enabling users to connect with industry peers, potential employers, and thought leaders. Additionally, the platform offers various resources such as job postings, industry news, and professional development content. By engaging on LinkedIn, you can join relevant groups, participate in discussions, and stay informed about the latest trends and opportunities in your field. Whether you're looking to advance your career, explore new job opportunities, or expand your business network, LinkedIn is an essential tool for achieving your professional aspirations.
+
 <p align="center">
-  <img src="https://github.com/dheerajdhegde/dheerajdhegde.github.io/assets/105264588/ecb876bb-850c-43cf-a5d1-bce2dd74d856" width="300" alt="HLD-Youtube">
+  <img src="https://github.com/dheerajdhegde/dheerajdhegde.github.io/assets/105264588/5888be17-7ad4-438e-ad59-015e9c62d426" width="300" alt="HLD-Youtube">
 </p>
 
 
@@ -28,15 +29,13 @@ LinkedIn is a premier professional networking platform that connects millions of
 
 
 
-## BusinessCases
-
-
+## Features
 
 ### 1.Directed Acyclic Graph(DAG):
  We can use DAGs to manage and orchestrate data pipelines. In these pipelines, various data processing tasks (nodes) are executed in a specific order (directed edges) without any cycles (acyclic). This ensures that data flows smoothly from one stage to the next, such as data extraction, transformation, and loading (ETL) processes.<br>
  this can help us to manage resources efficiently with minimized cost.
  <p align="center">
-  <img src="https://github.com/dheerajdhegde/dheerajdhegde.github.io/assets/105264588/9206d8f4-a05e-4aa2-8abc-18a112a76cff" width="300" alt="HLD-Youtube">
+  <img src="https://github.com/dheerajdhegde/dheerajdhegde.github.io/assets/105264588/26ccaa1a-c28b-4ed5-b023-cd35a0f140ac" width="300" alt="HLD-Youtube">
 </p>
 
 **Design techniques and algorithms:** <br> 
@@ -48,7 +47,6 @@ LinkedIn is a premier professional networking platform that connects millions of
    - **Time Complexity:** O(logN) for insertion and deletion (push and pop)<br>
    - **Space Complexity:** O(N)<br>
    - View Implementation: [Priority](https://github.com/dheerajdhegde/dheerajdhegde.github.io/blob/main/codes/priority.cpp)<br>
-  
 
 
 ### 2.Efficient Search 
@@ -60,9 +58,10 @@ The users should be able to search the profiles and content across the globe, so
 Indexing: O(n log n) where n is the number of items.<br>
 Querying: O(k + log n) where k is the number of query terms.<br>
 
-<p align="center">
-  <img src="https://github.com/dheerajdhegde/dheerajdhegde.github.io/assets/105264588/f6d8ba73-97da-4a00-b2f2-55e25ddd8fc4" width="300" alt="HLD-Youtube">
+<p>
+  <img src="https://github.com/dheerajdhegde/dheerajdhegde.github.io/assets/105264588/03981554-44cc-48eb-8f06-a63debd0b9d8" width="300" alt="HLD-Youtube">
 </p>
+
 
 **Trie for Prefix Search:** Supports efficient prefix-based search and autocomplete.<br>
 - **Algorithm:** Trie (Prefix Tree) <br>
@@ -209,6 +208,15 @@ While searching any content user tend to make some typing mistakes so to prevent
 - **Time Complexity:** O(n) where n is number of word in node.
 - **Space Complexity:** O(N), where N is the total number of characters in all the stored strings.
 View Implementation:[Radix_tree](https://github.com/dheerajdhegde/dheerajdhegde.github.io/blob/main/codes/radix.cpp)
+
+## Refernces
+[1]Wikipedia. -"Directed Acyclic Graph". [https://en.wikipedia.org/wiki/Directed_acyclic_graph.]
+[2] Dremio. (2024). "Huffman Coding". Online. Dreamio. [https://www.dremio.com/wiki/huffman-coding/](https://www.dremio.com/wiki/huffman-coding/)  
+[3] Wikipedia. (2024). "Dijkstra's Algorithm". Online. Wikipedia. [https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm)   
+[4] Ravi K. (2024). "Topological Sorting". Online. Naukri. [https://www.naukri.com/code360/library/topological-sorting](https://www.naukri.com/code360/library/topological-sorting)  
+[5] PsychzNetworks. (2020). "CDN and Load Balancer: Ultimate combination for efficient content delivery". Online. PsychzNetworks. [https://www.psychz.net/client/blog/en/cdn-and-load-balancer-ultimate-combination-for-efficient-content-delivery-.html](https://www.psychz.net/client/blog/en/cdn-and-load-balancer-ultimate-combination-for-efficient-content-delivery-.html)  
+
+
 
 
 
