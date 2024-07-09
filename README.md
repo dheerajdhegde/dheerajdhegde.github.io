@@ -32,9 +32,9 @@ LinkedIn is a premier professional networking platform that connects millions of
 ## Features
 
 ### 1.Directed Acyclic Graph(DAG):
- We can use DAGs to manage and orchestrate data pipelines. In these pipelines, various data processing tasks (nodes) are executed in a specific order (directed edges) without any cycles (acyclic). This ensures that data flows smoothly from one stage to the next, such as data extraction, transformation, and loading (ETL) processes.   This can help us to manage resources efficiently with minimized cost.
- **Challenges:** Handling large data like posts, videos, images and allocating resources.
- **benefits:** The storage of data will be efficienltly managed. 
+ We can use DAGs to manage and orchestrate data pipelines. In these pipelines, various data processing tasks (nodes) are executed in a specific order (directed edges) without any cycles (acyclic). This ensures that data flows smoothly from one stage to the next, such as data extraction, transformation, and loading (ETL) processes.   This can help us to manage resources efficiently with minimized cost.<br> 
+ **Challenges:** Handling large data like posts, videos, images and allocating resources.<br> 
+ **benefits:** The storage of data will be efficienltly managed. <br> 
  <p align="center">
   <img src="https://github.com/dheerajdhegde/dheerajdhegde.github.io/assets/105264588/26ccaa1a-c28b-4ed5-b023-cd35a0f140ac" width="300" alt="HLD-Youtube">
 </p>
@@ -51,10 +51,9 @@ LinkedIn is a premier professional networking platform that connects millions of
 
 
 ### 2.Efficient Search 
-The users should be able to search the profiles and content across the globe, Our search should be relevant and faster which should consits of auto-suggestion. So we can use Trie tree so that the search user types is readily sorted or understood by algortihm by discarding the irrelevant configuration of words. which can make our app to guess and preload the search to be done. 
-**Challenges:** To Handle large data and processing.
-
-**benefits:**  Quickly finding relevant information
+The users should be able to search the profiles and content across the globe, Our search should be relevant and faster which should consits of auto-suggestion. So we can use Trie tree so that the search user types is readily sorted or understood by algortihm by discarding the irrelevant configuration of words. which can make our app to guess and preload the search to be done. <br> 
+**Challenges:** To Handle large data and processing.<br> 
+**benefits:**  Quickly finding relevant information<br> 
 
 **Full-Text Search:** Searches within documentation and repositories.<br>
 - **Algorithm:** Inverted Index <br>
@@ -83,10 +82,10 @@ The users should recieve recommendations of content on basis of there activitiy 
 
 
 
-**Collaborative filtering:** This technique analyzes user behavior and interactions to suggest connections, jobs, or content similar to what others with similar profiles have engaged with.  Imagine it as finding users who walk a similar professional path and recommending things that were valuable to them.
+**Collaborative filtering:** This technique analyzes user behavior and interactions to suggest connections, jobs, or content similar to what others with similar profiles have engaged with.  Imagine it as finding users who walk a similar professional path and recommending things that were valuable to them.<br> 
 
-**Challenges:** Cold start problem and data sparsity.
-**Benefits:** Personalized and relevant content suggestions.
+**Challenges:** Cold start problem and data sparsity.<br> 
+**Benefits:** Personalized and relevant content suggestions.<br> 
 
 - **Time Complexity:** O(U*I^2) where U and I represent the total number of Users and Items.
 - **Space Complexity:** O(U*I) for the 2D matrix  
@@ -98,17 +97,17 @@ We can notify the user when other profile has viwed the users profile or when th
 Notifications in linkdein are for keeping users informed about activities relevant to their projects and interactions. They provide real-time updates on events such as comments likes discussions. Notifications help users stay informed about discussions they’re involved in or grouos they’re interested in, ensuring timely responses and active participation in collaborative workflows. Users can manage notifications through personalized settings, choosing to receive updates via email, web notifications, or both, based on their preferences.
 
 We can employs event-driven architecture to handle these events, where each event triggers specific actions or notifications based on predefined rules and user preferences. This approach enables seamless integration of real-time updates into the platform, enhancing collaboration and ensuring that users stay informed about critical activities within their projects. By efficiently managing event handling and dispatch, We can facilitates smooth communication, timely responses, and effective management across its platform.<br>.
-**Challenges:** Ensuring privacy and avoiding notification fatigue.
-**Benefits:** Increased user engagement and satisfaction.
+**Challenges:** Ensuring privacy and avoiding notification fatigue.<br> 
+**Benefits:** Increased user engagement and satisfaction.<br> 
 - **Time Complexity:** O[1]
 
 
 ### 5.Content Display to user
 We can optimizes the content display by employing Lazy Propagation to update content metrics based on user interactions effectively. This approach ensures that relevant and engaging content is prominently featured to increase user engagement and interaction on the platform.
 Here we ca suggest new content in real tiem by processing the user previous content consumed. here we can use segment tree where the prefix array sum is calculated and new content is suggested.<br>
-**Challenges:** Efficiently handling real-time updates and large-scale data.
+**Challenges:** Efficiently handling real-time updates and large-scale data.<br> 
 
-**Benefits:** Dynamically delivering highly relevant content to boost user engagement.
+**Benefits:** Dynamically delivering highly relevant content to boost user engagement.<br> 
 
 
 <p align="center">
@@ -117,15 +116,15 @@ Here we ca suggest new content in real tiem by processing the user previous cont
 
 - **Time Complexity:** <br>
 Update with lazy propagation: O(log N)<br>
-Query with lazy propagation: O(log N) per affected node
+Query with lazy propagation: O(log N) per affected node<br> 
 
 - **Space Complexity:** O(N) due to the segment tree and the lazy array.<br>
 View Implementation:[Lazy Propogation](https://github.com/dheerajdhegde/dheerajdhegde.github.io/blob/main/codes/lazy_propogation.cpp)
 
 ### 6. Connections
-Our users should get recommendations of new connections on the basis of there previous connection. here we can find out new connection by figuriong the mutual connections between the user links. we can use algorithms such as BFS(Breadth First Search) and DFS(Depth First Search) to find the shoretest or nearest connection in the network of user. this can make easy connection and grouping of users which can improve content sharing and collection. 
-**Challenges:** Managing computational complexity and maintaining up-to-date connection data.
-**Benefits:** Facilitates easier networking and enhances user community building.
+Our users should get recommendations of new connections on the basis of there previous connection. here we can find out new connection by figuriong the mutual connections between the user links. we can use algorithms such as BFS(Breadth First Search) and DFS(Depth First Search) to find the shoretest or nearest connection in the network of user. this can make easy connection and grouping of users which can improve content sharing and collection. <br> 
+**Challenges:** Managing computational complexity and maintaining up-to-date connection data.<br> 
+**Benefits:** Facilitates easier networking and enhances user community building.<br> 
 
 <p align="center">
   <img src="https://github.com/dheerajdhegde/dheerajdhegde.github.io/assets/105264588/293ff03d-1a5c-4f23-868c-93f6bd060595" width="300" alt="HLD-Youtube">
@@ -143,7 +142,7 @@ View Implementation:[BFS](https://github.com/dheerajdhegde/dheerajdhegde.github.
 View Implementation:[DFS](https://github.com/dheerajdhegde/dheerajdhegde.github.io/blob/main/codes/DFS.cpp)
 
 ### 7. Collaboration or Groups
-We can recommend users the professional groups in a logical and sequential order, considering their current affiliations, interests, and activities. Joining these relevant groups can greatly enhance users' professional networks, provide valuable content, and foster meaningful interactions. Here we can use dijkstra to find the nearest link with the same skills and intrests and can make a group with them.
+We can recommend users the professional groups in a logical and sequential order, considering their current affiliations, interests, and activities. Joining these relevant groups can greatly enhance users' professional networks, provide valuable content, and foster meaningful interactions. Here we can use dijkstra to find the nearest link with the same skills and intrests and can make a group with them.<br> 
 
 <p align="center">
   <img src="https://github.com/dheerajdhegde/dheerajdhegde.github.io/assets/105264588/eedc9f32-0c1d-40de-9359-c5bd8d334524" width="550" alt="HLD-Youtube">
