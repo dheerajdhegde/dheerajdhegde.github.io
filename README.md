@@ -106,7 +106,6 @@ We can employs event-driven architecture to handle these events, where each even
 We can optimizes the content display by employing Lazy Propagation to update content metrics based on user interactions effectively. This approach ensures that relevant and engaging content is prominently featured to increase user engagement and interaction on the platform.
 Here we ca suggest new content in real tiem by processing the user previous content consumed. here we can use segment tree where the prefix array sum is calculated and new content is suggested.<br>
 **Challenges:** Efficiently handling real-time updates and large-scale data.<br> 
-
 **Benefits:** Dynamically delivering highly relevant content to boost user engagement.<br> 
 
 
@@ -142,8 +141,9 @@ View Implementation:[BFS](https://github.com/dheerajdhegde/dheerajdhegde.github.
 View Implementation:[DFS](https://github.com/dheerajdhegde/dheerajdhegde.github.io/blob/main/codes/DFS.cpp)
 
 ### 7. Collaboration or Groups
-We can recommend users the professional groups in a logical and sequential order, considering their current affiliations, interests, and activities. Joining these relevant groups can greatly enhance users' professional networks, provide valuable content, and foster meaningful interactions. Here we can use dijkstra to find the nearest link with the same skills and intrests and can make a group with them.<br> 
-
+We can recommend users the professional groups in a logical and sequential order, considering their current affiliations, interests, and activities. Joining these relevant groups can greatly enhance users' professional networks, provide valuable content, and foster meaningful interactions. Here we can use dijkstra to find the nearest link with the same skills and intrests and can make a group with them. the group created can increase in conetent sharing and generation which inturn helps in the user development <br> 
+**Challenges:** Accurately identifying relevant groups and handling dynamic user interests.<br> 
+**Benefits:** Enhances professional networking and promotes active content sharing and user development.<br> 
 <p align="center">
   <img src="https://github.com/dheerajdhegde/dheerajdhegde.github.io/assets/105264588/eedc9f32-0c1d-40de-9359-c5bd8d334524" width="550" alt="HLD-Youtube">
 </p>
@@ -157,8 +157,9 @@ We can recommend users the professional groups in a logical and sequential order
 
 
 ### 8. Load Balancing
-Our app handles a high volume of data requests over a network, directing user requests to the server with minimal resource usage, such as CPU, memory, and bandwidth. This is particularly crucial when popular posts are being watched by millions of users. Given that our servers vary in resources like RAM and memory, it's essential to manage incoming requests effectively and direct them to servers that can process them efficiently. Load balancing algorithms such as Round Robin and Weighted Round Robin help distribute requests based on server metrics[5].  
-
+Our app handles a high volume of data requests over a network, directing user requests to the server with minimal resource usage, such as CPU, memory, and bandwidth. This is particularly crucial when popular posts are being watched by millions of users. Given that our servers vary in resources like RAM and memory, it's essential to manage incoming requests effectively and direct them to servers that can process them efficiently. Load balancing algorithms such as Round Robin and Weighted Round Robin help distribute requests based on server metrics[5]. 
+**Challenges:** Efficiently managing resource allocation and preventing server overloads. <br> 
+**Benefits:** Ensures optimal performance and reliability, even under high traffic. <br> 
 <p align="center">
   <img src="https://github.com/dheerajdhegde/dheerajdhegde.github.io/assets/105264588/49815250-1f76-4f63-b9b2-6b5750c170fb" width="500" alt="HLD-Youtube">
 </p>
@@ -176,7 +177,9 @@ Our app handles a high volume of data requests over a network, directing user re
 
 
 ### 9. Job Recommendation
-For recommendation of jobs for users we can sort the data and display the tabel of hiring data whcih matches with the profile data of users. to do this we can use merge sort which has best performance for large datasets and can give less complexity.
+For recommendation of jobs for users we can sort the data and display the tabel of hiring data which matches with the profile data of users. to do this we can use merge sort which has best performance for large datasets and can give less complexity. By sorting the data of hiring we can provide an hiring list and most similar job as per required skill.
+**Challenges:** Matching diverse user profiles with job criteria and managing real-time updates.
+**Benefits:** Facilitates tailored job recommendations based on user skills and preferences, enhancing job search efficiency.
 
 <p align="center">
   <img src="https://github.com/dheerajdhegde/dheerajdhegde.github.io/assets/105264588/e2113594-638a-44a0-9514-6c24f85ff5d5" width="500" alt="HLD-Youtube">
@@ -189,7 +192,7 @@ For recommendation of jobs for users we can sort the data and display the tabel 
 
 
 ### 10. Activity
-The activity of user to be maintained as the metrics to know the time spent, likes, dislikes. here we can implement an fenwick tree where it stores the time stamp or the count of access. from where we can get time of specific hour or day by range sum queries
+The activity of user to be maintained as the metrics to know the time spent, likes, dislikes. here we can implement an fenwick tree where it stores the time stamp or the count of access. from where we can get time of specific hour or day by range sum queries. This activity analysis can provide user a clear thought of there stronger and weaker side by which they can improve on the topics needed 
 **Fenwick Tree**
 - **Time Complexity:** O(NlogN) for tree, O(logN) for update where N is the number of nodes.
 - **Space Complexity:** O(N)
