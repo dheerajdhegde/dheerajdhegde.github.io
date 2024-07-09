@@ -33,6 +33,8 @@ LinkedIn is a premier professional networking platform that connects millions of
 
 ### 1.Directed Acyclic Graph(DAG):
  We can use DAGs to manage and orchestrate data pipelines. In these pipelines, various data processing tasks (nodes) are executed in a specific order (directed edges) without any cycles (acyclic). This ensures that data flows smoothly from one stage to the next, such as data extraction, transformation, and loading (ETL) processes.   This can help us to manage resources efficiently with minimized cost.
+ **Challenges:** Handling large data like posts, videos, images and allocating resources.
+ **benefits:** The storage of data will be efficienltly managed. 
  <p align="center">
   <img src="https://github.com/dheerajdhegde/dheerajdhegde.github.io/assets/105264588/26ccaa1a-c28b-4ed5-b023-cd35a0f140ac" width="300" alt="HLD-Youtube">
 </p>
@@ -140,11 +142,11 @@ We can recommend users the professional groups in a logical and sequential order
 
 
 ### 8. Load Balancing
-Our app handles a high volume of data requests over a network, directing user requests to the server with minimal resource usage, such as CPU, memory, and bandwidth. This is particularly crucial when popular posts are being watched by millions of users. Given that our servers vary in resources like RAM and memory, it's essential to manage incoming requests effectively and direct them to servers that can process them efficiently. Load balancing algorithms such as Round Robin and Weighted Round Robin help distribute requests based on server metrics.[5]
+Our app handles a high volume of data requests over a network, directing user requests to the server with minimal resource usage, such as CPU, memory, and bandwidth. This is particularly crucial when popular posts are being watched by millions of users. Given that our servers vary in resources like RAM and memory, it's essential to manage incoming requests effectively and direct them to servers that can process them efficiently. Load balancing algorithms such as Round Robin and Weighted Round Robin help distribute requests based on server metrics[5].  
 
 <p align="center">
   <img src="https://github.com/dheerajdhegde/dheerajdhegde.github.io/assets/105264588/49815250-1f76-4f63-b9b2-6b5750c170fb" width="500" alt="HLD-Youtube">
-<p>
+</p>
 
 
 **Round Robin**: Static, Greedy approach
@@ -163,7 +165,7 @@ For recommendation of jobs for users we can sort the data and display the tabel 
 
 <p align="center">
   <img src="https://github.com/dheerajdhegde/dheerajdhegde.github.io/assets/105264588/e2113594-638a-44a0-9514-6c24f85ff5d5" width="500" alt="HLD-Youtube">
-<p>
+</p>
 
 **Merge Sort**: 
 - **Time Complexity:** O(N*log(N)) here N number of modes.
